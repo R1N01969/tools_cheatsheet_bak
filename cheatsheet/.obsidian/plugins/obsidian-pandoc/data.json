@@ -1,0 +1,15 @@
+{
+  "showCLICommands": false,
+  "addExtensionsToInternalLinks": "html",
+  "injectAppCSS": "light",
+  "injectThemeCSS": false,
+  "customCSSFile": null,
+  "displayYAMLFrontmatter": false,
+  "linkStrippingBehaviour": "text",
+  "highDPIDiagrams": true,
+  "pandoc": "/usr/bin/pandoc",
+  "pdflatex": null,
+  "outputFolder": null,
+  "extraArguments": "--from markdown+yaml_metadata_block+raw_html\n--template eisvogel\n--table-of-contents\n--toc-depth 6\n--number-sections\n--top-level-division=chapter\n--highlight-style breezedark\n--resource-path=.:src\n--listings",
+  "exportFrom": "md"
+}

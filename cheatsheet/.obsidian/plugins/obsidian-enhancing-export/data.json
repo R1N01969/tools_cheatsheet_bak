@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "name": "Markdown"
+    },
+    {
+      "name": "Markdown (Hugo)"
+    },
+    {
+      "name": "Html"
+    },
+    {
+      "name": "TextBundle"
+    },
+    {
+      "name": "Typst"
+    },
+    {
+      "name": "PDF"
+    },
+    {
+      "name": "Word (.docx)"
+    },
+    {
+      "name": "OpenOffice"
+    },
+    {
+      "name": "RTF"
+    },
+    {
+      "name": "Epub"
+    },
+    {
+      "name": "Latex"
+    },
+    {
+      "name": "Media Wiki"
+    },
+    {
+      "name": "reStructuredText"
+    },
+    {
+      "name": "Textile"
+    },
+    {
+      "name": "OPML"
+    },
+    {
+      "name": "Bibliography"
+    },
+    {
+      "name": "OSCP",
+      "type": "pandoc",
+      "arguments": "--from markdown+yaml_metadata_block+raw_html --template eisvogel --table-of-contents --toc-depth 6 --number-sections --top-level-division=chapter --highlight-style breezedark --resource-path=.:src",
+      "customArguments": "",
+      "optionsMeta": {
+        "textemplate": "preset:textemplate"
+      },
+      "extension": ".pdf"
+    }
+  ],
+  "defaultExportDirectoryMode": "Same",
+  "openExportedFile": true,
+  "env": {},
+  "showExportProgressBar": true,
+  "lastEditName": "OSCP"
+}
