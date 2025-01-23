@@ -15,9 +15,17 @@ enum4linux-ng -A 192.168.50.150
 
 nmap -v -p 139,445 --script smb-os-discovery 192.168.50.150
 
+```
+
+#### crackmapexec, netexec
+```
 crackmapexec smb 10.10.10.10 --users [-u <username> -p <password> -H <HASH>]
 crackmapexec smb 10.10.10.10 --groups [-u <username> -p <password> -H <HASH>]
 crackmapexec smb 10.10.10.10 --groups --loggedon-users [-u <username> -p <password> -H <HASH>]
+
+netexec smb 10.10.10.10 --users [-u <username> -p <password> -H <HASH>]
+netexec smb 10.10.10.10 --groups [-u <username> -p <password> -H <HASH>]
+netexec smb 10.10.10.10 --groups --loggedon-users [-u <username> -p <password> -H <HASH>]
 
 ```
 

